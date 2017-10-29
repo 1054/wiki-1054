@@ -1,0 +1,40 @@
+For double VGA card Intel + Nvidia Notebook, under CentOS 7
+<html><font size=2></html>
+<code bash>
+sudo rpm -ivh http://install.linux.ncsu.edu/pub/yum/itecs/public/bumblebee/rhel7/noarch/bumblebee-release-1.0-1.noarch.rpm
+sudo rpm -ivh http://install.linux.ncsu.edu/pub/yum/itecs/public/bumblebee-nonfree/rhel7/noarch/bumblebee-nonfree-release-1.0-1.noarch.rpm
+sudo yum install -y bbswitch bumblebee
+# 
+sudo cp /boot/initramfs-3.10.0-123.el7.x86_64.img /boot/initramfs-3.10.0-123.el7.x86_64.img.backup.bumblebee
+sudo yum install -y bumblebee-nvidia
+# 
+systemctl restart bumblebeed
+# to uninstall
+/usr/sbin/bumblebee-nvidia --debug --uninstall
+# 
+# MUST LOOK AT:
+# http://fedoraproject.org/wiki/Bumblebee
+# 
+</code>
+<html></font></html>
+
+
+
+For double VGA card Intel + Nvidia Notebook, under Archlinux
+<html><font size=2></html>
+<code bash>
+sudo pacman -S bumblebee bbswitch xf86-video-intel nvidia lib32-virtualgl 
+# 
+sudo cp /boot/initramfs-3.10.0-123.el7.x86_64.img /boot/initramfs-3.10.0-123.el7.x86_64.img.backup.bumblebee
+sudo yum install -y bumblebee-nvidia
+# 
+sudo gpasswd -a $USER bumblebee
+# 
+optirun glxspheres64 -info
+# 
+# MUST LOOK AT:
+# https://wiki.archlinux.org/index.php/bumblebee
+# 
+</code>
+<html></font></html>
+

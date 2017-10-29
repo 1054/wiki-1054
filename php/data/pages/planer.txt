@@ -1,0 +1,26 @@
+planer is the name of a powerful super-computer cluster. For big institute, super-computer cluster would be a necessity, thus it is important to known how to use it. One of the most popular system that manages super-computer tasks is qsub? 
+
+
+<html><font size="-1"></html>
+<code bash>
+ssh -X planer
+qsub -IX -l walltime=72:00:00 -l mem=32GB
+qsub -IX -q herschel -l nodes=sapherschel8 -l walltime=72:00:00 -l pmem=48GB
+qsub -IX -q herschel -l walltime=24:00:00 -l pmem=24GB
+
+module avail
+module load casa/4.2.2
+module load gildas/jun14a
+module load ds9/7.2
+module load wcstools/3.8.7
+
+casa
+
+execfile('script.py')
+
+</code>
+<html></font></html>
+
+
+
+

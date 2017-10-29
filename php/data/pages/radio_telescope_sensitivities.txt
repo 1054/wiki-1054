@@ -1,0 +1,33 @@
+===== Take IRAM PdBI as an example =====
+
+The rms noise can be estimated by (referred to an PPT [[http://www.not.iac.es/tuorla2009/local/Current%20millimeter%20interferometers.ppt | here]]):
+
+$ \displaystyle \sigma_S = \frac{2k}{A} \times \frac{<T_{sys}>}{\eta_{A} \eta_{C} \eta_{P} \eta_{J} \sqrt{N_{antenna} (N_{antenna}-1) \, N_{config} \, N_{polar} \, \Delta{\nu} \, \Delta{T_{ON}}}} $
+
+where:
+  - $\displaystyle A$ is the single antenna area, 177 m^2 for PdBI antenna;
+  - $\displaystyle \frac{2k}{A}$ can also be represented by $J_{pK}$ (?)(TODO:make sure?), the factor converting K to Jy, $J_{pK}=35\,Jy/K$@1.3mm for PdBI;
+  - $\displaystyle <T_{sys}>$ is the System Temperature in unit of K; 
+  - $\displaystyle \eta_A$ is the Aperture Efficiency, 0.70@3mm to 0.45@1mm for PdBI; 
+  - $\displaystyle \eta_C$ is the Correlator Efficiency, 0.88 for PdBI; 
+  - $\displaystyle \eta_P$ is the Atmospheric Decorrelate Efficiency, $e^{-\frac{1}{2}\sigma_P^2} \le 0.95$;
+  - $\displaystyle \eta_J$ is the Instrumental Jitter, $e^{-\frac{1}{2}\sigma_J^2} \approx 0.95$;
+  - $\displaystyle N_{antenna}$ is the Number of Antennae; 
+  - $\displaystyle N_{config}$ is the Number of Configurations, e.g. A or B or C or D, $N_{config}$=1, AnB or CnD, $N_{config}$=2, etc;
+  - $\displaystyle N_{polar}$ is the Number of Polarizations;
+  - $\displaystyle \Delta{\nu}$ is the Spectral Bandwidth, for narrow band correlator, it can be as low as 39 kHz, while for wide band correlator (WideX), it can be up to 3.6 GHz. Here it is in unit of Hz.
+  - $\displaystyle \Delta{T_{ON}}$ is the on-source time, in unit of second. 
+
+
+
+
+===== ALMA Cycle 2 Catability =====
+
+[[https://almascience.eso.org/proposing/call-for-proposals/capabilities]]
+
+[[https://almascience.eso.org/documents-and-tools/cycle-2/alma-technical-handbook]]
+
+
+
+
+

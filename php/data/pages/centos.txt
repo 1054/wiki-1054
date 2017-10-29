@@ -1,0 +1,202 @@
+=== CentOS 6 for home use ===
+==== Vi Sudo ====
+<html><font size=1></html>
+<code bash>
+su -c 'visudo'
+</code>
+<html></font></html>
+
+
+
+==== Yum Repo ====
+<html><font size=1></html>
+<code bash>
+# sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
+# sudo rpm -ivh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm
+# 
+sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+sudo rpm -ivh http://li.nux.ro/download/nux/dextop/el6/x86_64/nux-dextop-release-0-2.el6.nux.noarch.rpm
+# 
+sudo bash -c 'cat << EOF > /etc/yum.repos.d/atrpms.repo
+[atrpms]
+name=Redhat 6 - x86-64 - ATrpms
+baseurl=http://dl.atrpms.net/el6-x86_64/atrpms/stable
+gpgkey=http://ATrpms.net/RPM-GPG-KEY.atrpms
+gpgcheck=1
+EOF'
+# 
+sudo wget http://download.opensuse.org/repositories/home:colomboem/Fedora_20/home:colomboem.repo -O /etc/yum.repos.d/colomboem.repo
+sudo wget http://freefr.dl.sourceforge.net/project/elmythos/yum/repos/qt48-qt/qt48-qt.repo -O /etc/yum.repos.d/qt48-qt.repo
+# 
+# sudo yum clean all
+sudo yum makecache
+sudo sed -i /etc/yum.conf -e s/keepcache=0/keepcache=1/g
+</code>
+<html></font></html>
+
+
+
+==== Disk ====
+<html><font size=1></html>
+<code bash>
+sudo yum install -y ntfs-3g
+</code>
+<html></font></html>
+
+
+
+==== Power ====
+<html><font size=1></html>
+<code bash>
+su -
+****** # input root password MUSE BE ROOT TO PROCEED!
+# [1]
+# gedit /boot/grub2/grub.cfg
+# >> linux16 /boot/vmlinuz-3.10.0-123.el7.x86_64 root=/dev/sda1 ro   pcie_aspm.policy=powersave   rhgb quiet
+# [2]
+yum install -y kernel-devel kernel-headers kernel-tools lm_sensors cpupowerutils xbacklight
+### cpupower set --perf-bias 15
+cpupower frequency-set --governor powersave
+cpupower frequency-info --governors # now check the cpu frequency policy
+cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq # now check current cpu frequency
+# [3]
+xbacklight -set 40
+# [4]
+# echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
+# cat /sys/class/scsi_host/host0/link_power_management_policy # now check scsi power management policy (not sure?)
+# [5]
+echo 5 > /proc/sys/vm/laptop_mode
+echo 0 > /proc/sys/kernel/nmi_watchdog
+echo powersave > /sys/module/pcie_aspm/parameters/policy # FAILED???
+# [Refer]
+# http://www.thinkwiki.org/wiki/How_to_reduce_power_consumption
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Power_Management_Guide/cpu_power_saving.html
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Power_Management_Guide/Example_Laptop.html
+# http://www.webupd8.org/2014/04/prevent-your-laptop-from-overheating.html
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Power_Management_Guide/ASPM.html
+# [6]
+# And cancel the lock when recover from scrennsaver
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gconftool-2 --set -t boolean /apps/gnome-screensaver/idle_activation_enabled false
+# [7]
+# And do not need selinux
+sed -i /etc/selinux/config -e s/SELINUX=enforcing/SELINUX=permissive/g
+</code>
+<html></font></html>
+
+
+
+==== Fonts ====
+<html><font size=1></html>
+<code bash>
+# font SIL Andika (sans serif)
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-andika-fonts-1.0-12.fc20.noarch.rpm
+# font SIL Gentium (avec serif)
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-fonts-common-1.02-15.fc20.noarch.rpm
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-fonts-1.02-15.fc20.noarch.rpm
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-basic-fonts-common-1.1-10.fc20.noarch.rpm
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-basic-fonts-1.1-10.fc20.noarch.rpm
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-basic-book-fonts-1.1-10.fc20.noarch.rpm
+sudo rpm -ivh http://ftp.sjtu.edu.cn/sites/download.fedora.redhat.com/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/s/sil-gentium-alt-fonts-1.02-15.fc20.noarch.rpm
+# font Yahei Consolas
+wget https://raw.githubusercontent.com/Nodeclipse/eclipse-node-ide/master/Fonts/YaHei.Consolas.1.12.ttf --directory-prefix=$HOME/.fonts/ --no-check-certificate
+# fc-cache and fc-list
+fc-cache -f -v
+fc-list : family style file spacing 
+# gnome-shell
+# sudo gedit /usr/share/gnome-shell/theme/gnome-shell.css
+# gtk3
+gsettings get org.gnome.desktop.interface font-name
+gsettings set org.gnome.desktop.interface font-name 'Andika 12'
+gsettings get org.gnome.desktop.interface document-font-name
+gsettings set org.gnome.desktop.interface document-font-name 'Andika 11'
+gsettings get org.gnome.desktop.interface monospace-font-name
+gsettings set org.gnome.desktop.interface monospace-font-name 'Consolas 11'
+gsettings get org.gnome.desktop.wm.preferences titlebar-font
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Overlock Bold 11'
+gsettings get org.gnome.settings-daemon.plugins.xsettings hinting
+gsettings set org.gnome.settings-daemon.plugins.xsettings hinting none # yes, set it as none.
+gsettings get org.gnome.settings-daemon.plugins.xsettings antialiasing
+gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing grayscale # or Rgba no difference
+# gtk2
+gconftool-2 --all-entries /desktop/gnome/interface
+gconftool-2 --get /desktop/gnome/interface/font_name
+gconftool-2 --type=string --set /desktop/gnome/interface/font_name "Andika Basic 10"
+gconftool-2 --type=string --set /desktop/gnome/interface/document_font_name "Andika Basic 10"
+gconftool-2 --type=string --set /desktop/gnome/interface/monospace_font_name "YaHei Consolas Hybrid 11"
+# font han
+# sudo gedit /etc/fonts/conf.d/65-0-wqy-zenhei-sharp.conf
+mkdir .fonts
+</code>
+<html></font></html>
+
+
+
+==== Themes ====
+<html><font size=1></html>
+<code bash>
+###<GNOME3>###sudo yum install -y gnome-shell-browser-plugin gnome-tweak-tool gnome-shell-extension-user-theme glib2-devel gtk3-devel vala ImageMagick
+# [Gnome-3-adjust-title-bar-height]
+# http://forums.opensuse.org/showthread.php/470350-12-1-Gnome-3-adjust-title-bar-height
+sudo sed -i "/title_vertical_pad/s/value=\"[0-9]\{1,2\}\"/value=\"0\"/g" /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml
+</code>
+<html></font></html>
+
+
+
+==== Files ====
+<html><font size=1></html>
+<code bash>
+sudo yum install -y p7zip nautilus-devel nautilus-extensions nautilus-open-terminal file-roller-nautilus
+</code>
+<html></font></html>
+
+
+
+==== Writing ====
+<html><font size=1></html>
+<code bash>
+sudo yum install -y texlive
+</code>
+<html></font></html>
+
+
+
+==== Programming ====
+<html><font size=1></html>
+<code bash>
+sudo yum install -y libtool f2c f2c-libs flex libgfortran-static libXaw-devel readline-static readline-devel qt-devel qt-creator
+</code>
+<html></font></html>
+
+
+
+==== Softwares Misc ====
+<html><font size=1></html>
+<code bash>
+# dukto R6
+# sudo yum install -y dukto
+sudo yum install -y qt48 qt48-qt qt48-build qt48-devel qt48-qt-config qt48-qt-x11 qt48-qt-mysql qt48-qt-examples qt48-qt-debuginfo --enable-repo=qt48-qt
+cat /opt/rh/qt48/enable
+export PATH=/opt/rh/qt48/root/usr/bin${PATH:+:${PATH}}
+export MANPATH=/opt/rh/qt48/root/usr/share/man${MANPATH:+:${MANPATH}}
+export INFOPATH=/opt/rh/qt48/root/usr/share/info${INFOPATH:+:${INFOPATH}}
+export LD_LIBRARY_PATH=/opt/rh/qt48/root/usr/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+cd Software/dukto
+wget http://ftp5.gwdg.de/pub/opensuse/repositories/home:/colomboem/openSUSE_Tumbleweed/src/dukto-6.0-13.4.src.rpm -O - | rpm2cpio | cpio -idmv | tar -xz
+cd dukto-6.0/ & qmake-qt4 & make & ./dukto
+# dukto R6 (port 4644)
+# sudo firewall-cmd --zone=public --add-port=4644/tcp  --permanent
+# sudo firewall-cmd --zone=public --add-port=4644/udp  --permanent
+sudo iptables -I INPUT -p tcp --dport 4644 -j ACCEPT
+sudo iptables -I INPUT -p udp --dport 4644 -j ACCEPT
+sudo iptables -L -v
+sudo service iptables save
+sudo service iptables restart
+</code>
+<html></font></html>
+
+
+
+
+

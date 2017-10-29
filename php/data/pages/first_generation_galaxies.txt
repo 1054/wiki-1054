@@ -1,0 +1,80 @@
+
+
+===== First Generation Galaxies =====
+
+<html><font face="Times New Roman,serif" size="-1"></html>
+
+^ Source              ^ Coord               ^ z       ^ Coverage      ^ Confirm    ^ Paper       ^ SED      ^
+| A1689-zD1           |                     | ~7.5    | Opt, ALMA 1mm |            | [[http://www.nature.com/nature/journal/v519/n7543/full/nature14164.html|Watson et al. 2015 Nature]] | [[http://www.nature.com/nature/journal/v519/n7543/fig_tab/nature14164_SF7.html|Watson et al. 2015 Nature Extended Figure 7]] |
+| SXDF-NB1006-2       | J021856.5-051958.9  | 7.215   |               | Ly_alpha   | Shibuya et al. 2012                  |    |
+| GN-108036 (GOODSN)  |                     | 7.213   |               | Ly_alpha   | Ono et al. 2012                      |    |
+| BDF-3299            | J222812.3-350959.4  | 7.109   |               | Ly_alpha   | Vanzella et al. 2010 (AstroDeep)     |    |
+| A1703_zD6           | J131501.0+515004    | 7.045   |               | Ly_alpha   | Schenker et al. 2012                 |    |
+| BDF-521             | J222703.1-350707.7  | 7.008   |               | Ly_alpha   | Vanzella et al. 2010 (AstroDeep)     |    |
+| G2-1408             | J132357.1+272448    | 6.972   |               | Ly_alpha   | Fontana et al. 2010 (AstroDeep)      |    |
+| IOK-1               | J132359.8+272456    | 6.964   |               | Ly_alpha   | Iye et al. 2006                      |    |
+| HUDF09_1596         | J033303.8-275120    | 6.905   |               | Ly_alpha   | Schenker et al. 2012                 |    |
+| SDF46975 (SubaruDF) |                     | 6.844   |               | Ly_alpha   | Ono et al. 2012                      |    |
+| NTTDF-6345          | J120536.9-074522.3  | 6.701   |               | Ly_alpha   | Pentericci et al. 2011 (AstroDeep)   |    |
+| Himiko (SubaruXDF)  | J021757.6-050844.5  | 6.595   |               | Ly_alpha   | [[http://arxiv.org/pdf/0807.4174|Ouchi et al. 2009]] [[http://arxiv.org/pdf/1306.3572|Ouchi et al. 2013]] | [[http://inspirehep.net/record/1238745/plots|Ouchi et al. 2013 Figure 7]] |
+
+
+see a wonderful website 
+  * http://firstgalaxies.org/
+
+references:
+  * http://www.eso.org/sci/meetings/2012/ewass2012/Fontana.pdf
+
+<html></font></html>
+
+
+
+<html><br /></html>
+<html><br /></html>
+<html><br /></html>
+<html><br /></html>
+<html><br /></html>
+<html><br /></html>
+
+
+
+
+===== Timeline of the Universe =====
+
+According to The Big Bang Theory + Inflation Theory: 
+
+<html><font face="Times New Roman,serif" size="-1"></html>
+
+^ Name of Epoch       ^ Time of Epoch              ^ Redshift     ^ Description                                               ^
+| Planck Epoch        | 0 to $10^{-43}$ s          |              | 4in1 fundamental force                                    |
+| Inflationary Epoch  | unknown to $10^{-32}$ s    |              | inflaton accelerates cosmic expansion                     |
+| Quark Epoch         | $10^{-12}$ to $10^{-6}$ s  |              | elementary particles interact Higgs field then got mass   |
+| Hadron Epoch        | $10^{-6}$ to 1 s           |              | hardons including baryons form from quark-gluon plasma    |
+| Lepton Epoch        | 1 to 10 s                  |              | most hadrons annihilate and leptons dominate in mass      |
+| Photon Epoch        | 10 s to 380,000 years      |              | most leptons annihilate and photons dominate in energy    |
+| Nucleosynthesis     | 3 min to 20 min            |              | atom ions form from protons neutrons => H:He=3:1 in mass  |
+| Matter Domination   | 70,000 years to now        |              | cold dark matter dominates amplifing the inhomogeneities  |
+| Recombination       | 377,000 years to now       | z~1050 to 0  | after quick proton-electron recombination, photons become free to travel   |
+| Reionization        | 150 Myr to 1 Gyr           | z~22 to 5~6  | first stars and quasars form, reionizing surroundings, until all H with certain low density (e.g. IGM) are ionized  |
+| First Star          | ~ 560 Myr                  | z~8~9        | The first star, i.e. PopIII with extremely low metallicity, was found by ESA as reported by BBC News in Feb 2015  |
+| First BlackHole     | ~ 500 Myr                  | z~9~10       | The first black hole was found by Richard Ellis (?)    |
+| First Galaxy        | ~ 500 Myr                  | z~9~10       | The first galaxy was found by Richard Ellis (BH=GA?)   |
+
+references: 
+  * [[http://en.wikipedia.org/wiki/Chronology_of_the_universe]]
+  * [[http://edition.cnn.com/2013/10/23/tech/innovation/most-distant-galaxy/index.html]]
+
+<html></font></html>
+
+
+
+
+
+
+
+
+
+
+
+
+

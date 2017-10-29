@@ -1,0 +1,24 @@
+====== Database! ======
+==== Galaxy/Galactic Sources Database ====
+| [[http://ned.ipac.caltech.edu/ | NED]] | [[http://simbad.u-strasbg.fr/ | SIMBAD]] |
+
+==== Astrophysical Literature Database ====
+| [[http://adsabs.harvard.edu/abstract_service.html | ADS]] | [[http://cdsads.u-strasbg.fr/abstract_service.html | ADS.fr ]] |
+
+==== Molecule/Atom Transition Database ====
+| [[http://home.strw.leidenuniv.nl/~moldata/| Leiden]] | [[http://basecol.obspm.fr/ | BASECOL]] | [[http://splatalogue.net/advanced1.php | Splatalogue]] | [[http://physics.nist.gov/cgi-bin/micro/table5/start.pl | NIST]] |
+
+==== Telescope Archive Database ====
+| [[http://carma-server.ncsa.uiuc.edu:8181/asp/carmaQuery.cgi | CARMA]] | [[https://archive.nrao.edu/archive/advquery.jsp | VLA]] | [[http://archives.esac.esa.int/hst/ | HST]] | [[http://irsa.ipac.caltech.edu/frontpage/ | IRSA]] | [[ALMA_database|ALMA]] | 
+
+
+==== Legacy Program Database ====
+| [[http://irsa.ipac.caltech.edu/data/SPITZER/LVL/summary.html | LVL]] |
+
+
+==== SED ====
+| [[https://www.astro.princeton.edu/~draine/dust/irem.html | Draine's SED]] |
+
+==== Kernels & PSFs ====
+| [[http://www.astro.princeton.edu/~ganiano/Kernels/Ker_2012_May/Kernels_fits_Files/Hi_Resolution/ | Aniano's Kernels]] | [[http://www.astro.princeton.edu/~ganiano/Kernels/Ker_2012_May/PSF_fits_Files/ | Aniano's PSFs]] |
+

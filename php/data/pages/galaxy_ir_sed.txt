@@ -1,0 +1,38 @@
+===== Galaxy IR SED =====
+
+  * CE01
+    * ISO, IRAS, SCUBA
+    * local LIRGs
+  * DH02
+    * ISRF [Umin-Umax] with slope alpha, assuming alpha correlates with S60/S100. 
+    * alpha=1 for SBG, alpha=2.5 for SFG. 
+  * Rieke et al. (2009)
+    * ISO, Spitzer
+    * LIRGs + ULIRGs
+  * Smith et al. (2012) (MNRAS 427 703)
+    * ..., Herschel
+    * SED da Cunha et al. (2008)
+    * H-ATLAS sources
+  * Elbaz et al. (2011)
+    * ..., Herschel
+    * SED DL07, MS/SB/IR8, setting IR8=LIR/L8um, which is lower in all MS, but higher in all SB. 
+    * 2 templates? one for MS with low IR8, another for SB with high IR8
+    * http://david.elbaz3.free.fr/astro_codes/chary_elbaz.html
+  * Magdis et al. (2012)
+    * ..., Herschel
+    * SED DL07, MS/SB/z, assuming <U> is proportional to z. 
+    * 1 template for SB using GN20, and a series of templates for MS by varying <U> with z. 
+    * http://georgiosmagdis.pbworks.com/w/page/59019974/SED%20Templates
+  * Berta et al. (2013)
+    * UV, ..., Herschel
+    * SED da Cunha et al. (2008) -- MAGPHYS code
+    * GOODS-N, GOODS-S, COSMOS, high-z sources
+
+
+
+===== Galaxy IR SED 2 =====
+[Galaxy_SED_IRASF17207_obsframe.csv]
+
+
+
+

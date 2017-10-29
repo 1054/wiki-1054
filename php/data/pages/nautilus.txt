@@ -1,0 +1,19 @@
+==== Install nautilus-terminal for nautilus ====
+  - prepare : python-nautilus, nautilus, etc
+  - download: http://projects.flogisoft.com/nautilus-terminal/download/
+  - install : unpack && cd nautilus-terminal_1.0_src/ && sudo ./install.sh -i
+  - reload  : nautilus -q && nautilus && nautilus -q && nautilus
+  - setting : gedit ~/.nautilus-terminal
+<code bash>
+[general]
+#The terminal height (lines)
+def_term_height=7
+#The terminal default visibility in new windows? (1: Visible, 0: Hidden)
+def_visible=1
+#The terminal position (1: Top, 0: Bottom)
+#NOTE: it is not recommended to put the terminal on the bottom
+term_on_top=0
+[terminal]
+#The shell to use (Nautilus Terminal use the user's defined shell by default)
+shell=/bin/bash
+</code>

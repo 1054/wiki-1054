@@ -1,0 +1,40 @@
+===== Radio Line Luminosities =====
+Here we collect several popular radio emission line luminosity calibrations. 
+
+Line luminosity has two expressions: $L_{line}$ and $L'_{line}$, the former one is in unit of solar luminosity, which is referring to photon energies, while the latter one is in unit of $K \, km \, s^{-1} pc^{2}$, referring to the surface brightness induced radio telescope antenna temperature. 
+
+  * CO(1-0)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.0 \ \log\,L'_{CO(1-0)} \ + 2.0 \ (\pm 0.5) $
+    * local LIRGs and ULIRGs
+    * Greve, T.~R., et al. 2014
+  * CO(1-0)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.0 \ \log\,L'_{CO(1-0)} \ + 2.16 \ (\pm 0.21) + 0.114 $
+    * the term $0.114=\lg(1.3)$ converts $\log\,L_{FIR,{50-300}{\mu}{m}} \ \ $ to $\log\,L_{IR,{8-1000}{\mu}{m}}$
+    * local LIRGs and ULIRGs and high-z mergers
+    * Genzel, R., et al. 2010
+  * CO(1-0)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.0 \ \log\,L'_{CO(1-0)} \ + 1.43 \ (\pm 0.33) + 0.114 $
+    * the term $0.114=\lg(1.3)$ converts $\log\,L_{FIR,{50-300}{\mu}{m}} \ \ $ to $\log\,L_{IR,{8-1000}{\mu}{m}}$
+    * local SFGs and high-z SFGs
+    * Genzel, R., et al. 2010
+  * CO(1-0)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.13 \ \log\,L'_{CO(1-0)} \ + 0.53 + 0.5 $
+    * the term $+0.5\,dex$ is mentioned in the caption of Fig.13. 
+    * local LIRGs and ULIRGs and high-z mergers
+    * Daddi, E., et al. 2010, Vol 713
+  * CO(1-0)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.13 \ \log\,L'_{CO(1-0)} \ + 0.53 \ (\pm 0.07) $
+    * local SF disks and high-z SF disks
+    * Daddi, E., et al. 2010, Vol 713
+  * CS(7-6)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 0.95 \ \log\,L'_{CS(7-6)} \ + 4.35 \ (\pm 0.32) $
+    * extends from the nuclear region of local normal galaxies to distant (U)LIRGs
+    * Zhang, Zhiyu, et al. 2014
+  * HCN(4-3)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.06 \ \log\,L'_{HCN(4-3)} \ + 3.17 \ (\pm 0.40) $
+    * extends from the nuclear region of local normal galaxies to distant (U)LIRGs
+    * Zhang, Zhiyu, et al. 2014
+  * HCO+(4-3)
+    * $ \log\,L_{IR,{8-1000}{\mu}{m}} \ = 1.33 \ \log\,L'_{HCO^{+}(4-3)} \ + 1.18 \ (\pm 0.71) $
+    * extends from the nuclear region of local normal galaxies to distant (U)LIRGs
+    * Zhang, Zhiyu, et al. 2014

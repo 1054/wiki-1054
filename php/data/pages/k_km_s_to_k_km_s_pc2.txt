@@ -1,0 +1,15 @@
+$ \frac{L'_{mol}}{[K \ km \ s^{-1} pc^2]} = Area \cdot (\frac{I_{mol}}{[K \ km/s]}) = (\frac{\Omega_{s*b}}{[sr]}) \ (\frac{D_A}{[pc]})^2 \ (\frac{I_{mol}}{[K \ km/s]}) = (\frac{\Omega_{s*b}}{[arcsec^2]}) \ (\frac{\pi\times10^{6}}{180\times3600})^2 \ (\frac{D_L}{[Mpc]})^2 \ (\frac{I_{mol}}{[K \ km/s]}) \ (1+z)^{-3} $
+
+thus
+
+$ \frac{L'_{mol}}{[K \ km \ s^{-1} pc^2]} = 23.50443 \ (\frac{\Omega_{s*b}}{[arcsec^2]}) \ (\frac{D_L}{[Mpc]})^2 \ (\frac{I_{mol}}{[K \ km/s]}) \ (1+z)^{-3} $
+
+see Solomon & Vanden Bout 2005 ARA&A eq (2). 
+
+and consider Gaussian shape beam, $\Omega_{s*b} = \frac{\pi}{4 \ln 2} \theta_{FHWM}^2$
+
+thus 
+
+$ \frac{L'_{mol}}{[K \ km \ s^{-1} pc^2]} = 26.63263542 \ (\frac{\theta_{FHWM}^2}{[arcsec^2]}) \ (\frac{D_L}{[Mpc]})^2 \ (\frac{I_{mol}}{[K \ km/s]}) \ (1+z)^{-3} $
+
+see Gao & Solomon 2004 ApJS eq (2). 

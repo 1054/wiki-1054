@@ -1,0 +1,2 @@
+^   Paper                                                                                ^  Telescope   ^  Sources      ^  Note                ^  <sup>12</sup>CO  ^  <sup>13</sup>CO  ^   C<sup>18</sup>O  ^   HCN   ^
+| [[http://adsabs.harvard.edu/abs/1995A%26A...300..369A|Aalto,1995A&A...300..369A]]      |  SEST, IRAM  |  32 galaxies  |                      |    J=1-0, 2-1     |    J=1-0, 2-1     |      J=1-0         |  J=1-0  | 

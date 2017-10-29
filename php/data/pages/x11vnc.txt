@@ -1,0 +1,8 @@
+==== x11vnc ====
+<code bash>
+sudo /usr/bin/x11vnc -storepasswd /etc/vnc/x11vnc.pass
+#### ****** [Enter password twice]
+sudo /usr/bin/x11vnc -background -forever -rfbport 990 -rfbauth /etc/vnc/x11vnc.pass -o /etc/vnc/x11vnc.log -display :0
+#### ------ [Run this as root]
+sudo iptables -A INPUT -p tcp --dport 990 -j ACCEPT
+</code>

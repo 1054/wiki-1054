@@ -1,0 +1,23 @@
+This is our small project, where we are investigating what its named as, the "DeepFields". 
+
+==== Introduction to Deep Fields ====
+The most famous deep field to us is the Hubble Deep Field, located in the middle of nowhere in the Northern hemisphere. The reason for which Ferguson et al. decided to use the Hubble Space Telescope to observe this tiny sky area in 1995 is its darkness. At first glance, we will see nothing but darkness, but by integrating a long time, galaxies as distant as out of imagination will gradually appear. The light coming from the most distant known galaxies have already traveled more than ten billion years, carrying the information when the Universe was only 500 million years old (z~9, H0=73, Omega_M=0.27, Lambda0=0.73). Through the investigation of all galaxies in deep fields, we will know the whole evolution history of all kinds of galaxies in our Universe, we will know how galaxies consume gas and give birth to stars and finally become old and red, and we will also obtain the information of early Universe, see how ancient galaxies look like, and so on...
+
+Astronomers are using the most advance facilities in the world to collect all wavelength of photons/electromagnetic waves, in many deep fields. Here we have a not-so-complete list of deep fields, and some information useful for researchers. 
+
+[[DeepFields_List_of_Deep_Fields|List of Deep Fields]]
+
+
+
+==== Studies of Deep Field Galaxies ====
+
+[[DeepFields_List_of_Studies_Statistics|List of Studies on the Statistics of Deep Field Galaxies]]
+
+[[DeepFields_List_of_Studies_Individual|List of Studies on Individual Deep Field Galaxies]]
+
+
+
+
+
+
+

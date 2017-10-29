@@ -1,0 +1,4 @@
+===== Color to Alpha =====
+
+To convert a typical color to alpha (transparent color), the image must be RGB type instead of other types like indexed. Image->Mode->RGB. 
+Then Colors->Color to Alpha. 

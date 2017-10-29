@@ -1,0 +1,31 @@
+
+
+
+
+===== Luminosity Functions (LF) =====
+
+$\displaystyle \phi (L) = \frac{\phi_{*}}{L_{*}} \left(\frac{L}{L_{*}}\right)^{\alpha} \ e^{-\left(\frac{L}{L_{*}}\right)}$
+
+<html><font size="-1"></html>
+^  Redshift  ^  Paper                      ^  Program               ^  $\phi_{*}/[Mpc^{-3}]$  ^  $L_{*}/[L_{\odot}]$  ^  $M_{*}$  ^  $\alpha$  ^
+|  6         |  Bouwens et al. (2007)      | i-dropout               |  1.4e-3                 |  $10^{-M_{*}/2.5}$    |  -20.24   |  -1.74     |
+|  0.05-0.2  |  Cucciati et al. (2012)     | I-selected VVDS         |  7.00e-3                |  $10^{-M_{*}/2.5}$    |  -18.12   |  -1.05     |
+|  0.2-0.4   |  Cucciati et al. (2012)     | I-selected VVDS         |  6.91e-3                |  $10^{-M_{*}/2.5}$    |  -18.3    |  -1.17     |
+|  0.4-0.6   |  Cucciati et al. (2012)     | I-selected VVDS         |  6.60e-3                |  $10^{-M_{*}/2.5}$    |  -18.4    |  -1.07     |
+|  0.6-0.8   |  Cucciati et al. (2012)     | I-selected VVDS         |  9.53e-3                |  $10^{-M_{*}/2.5}$    |  -18.3    |  -0.90     |
+|  0.8-1.0   |  Cucciati et al. (2012)     | I-selected VVDS         |  9.01e-3                |  $10^{-M_{*}/2.5}$    |  -18.7    |  -0.85     |
+|  1.0-1.2   |  Cucciati et al. (2012)     | I-selected VVDS         |  7.43e-3                |  $10^{-M_{*}/2.5}$    |  -19.0    |  -0.91     |
+|  1.2-1.7   |  Cucciati et al. (2012)     | I-selected VVDS         |  4.10e-3                |  $10^{-M_{*}/2.5}$    |  -19.6    |  -1.09     |
+|  1.7-2.5   |  Cucciati et al. (2012)     | I-selected VVDS         |  3.37e-3                |  $10^{-M_{*}/2.5}$    |  -20.4    |  -1.30     |
+|  2.5-3.5   |  Cucciati et al. (2012)     | I-selected VVDS         |  0.86e-3                |  $10^{-M_{*}/2.5}$    |  -21.4    |  -1.50     |
+|  3.5-4.5   |  Cucciati et al. (2012)     | I-selected VVDS         |  0.11e-3                |  $10^{-M_{*}/2.5}$    |  -22.2    |  -1.73     |
+
+<html></font></html>
+
+
+
+  * Reference:
+  * [[http://ned.ipac.caltech.edu/level5/March14/Madau/Madau5.html]]
+  * [[http://ned.ipac.caltech.edu/level5/Sept14/Dunlop/Dunlop6.html]]
+
+

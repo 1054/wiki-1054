@@ -1,0 +1,24 @@
+BASH is the "Gnu Bourne-Again Shell"
+
+===== loop control =====
+<code bash>
+   if TEST-COMMANDS; then CONSEQUENT-COMMANDS; fi
+</code>
+
+For example, if a variable exists, print 'yes', else print 'no'.
+<code bash>
+   if [ -z $TESTONLY ]
+        then
+        echo 'no'
+   else
+        echo 'yes'
+   fi
+</code>
+
+For example, if a file does not exist, print 'non exist'
+<code bash>
+   if [[ ! -f "file.name" ]]; then
+         echo 'non exist'
+   fi
+</code>
+

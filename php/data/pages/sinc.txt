@@ -1,0 +1,16 @@
+The sinc function is defined as
+
+    sinc(x) = sin(πx)/πx for x different from 0;
+    sinc(x) = 1 for x = 0. 
+
+The name "sinc" is shorthand for cardinal sine. The function sin(x)/x (for x different from 0...) is often denoted Sa(x), but is only a scaling of the sinc function. 
+
+http://everything2.com/title/sinc
+
+
+
+Solving 
+    sinc(x) = 0.5
+we get
+    x = 1.89549
+

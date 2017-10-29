@@ -1,0 +1,35 @@
+1D Gaussian function, also known as normal function, is in form of 
+
+$ \displaystyle {\it f} (x)= \frac{1}{\sqrt{2\pi}\sigma} e^{\frac{-(x-\mu)^2}{2\sigma^2}} $
+
+where μ is the centroid (mean value) and σ is the characteristic width (standard deviation). 
+
+The full width at the half height (FWHM) of the gaussian function is a direct parameter indicating how wide the gaussian is, 
+
+$ \displaystyle FWHM = 2\sqrt{2ln2} \cdot \sigma \approx 2.35482\sigma $
+
+1D Gaussian integral over the whole x axis is
+
+$ \displaystyle \int^{\infty}_{-\infty} a e^{-\frac{(x-\mu)^2}{2\sigma^2}} dx = \sqrt{2\pi} a |\sigma| $
+
+2D Gaussian integral over the whole (x,y) space is
+
+$ \displaystyle \int^{\infty}_{-\infty} a e^{-(\frac{(x-x_0)^2}{2\sigma_x^2}+\frac{(y-y_0)^2}{2\sigma_y^2})} dx dy = 2\pi a (\sigma_x^2+\sigma_y^2) $
+
+1D Gaussian integral over the whole radial>=0 space is
+
+$ \displaystyle \int^{+\infty}_{0} a \, e^{-\frac{r^2}{2\sigma^2}} dr = \sqrt{\frac{\pi}{2}} a |\sigma| $
+
+2D Gaussian integral over the whole radial>=0 space is
+
+$ \displaystyle \int^{+\infty}_{0} a \, 2 \pi \, r \, e^{-\frac{r^2}{2\sigma^2}} dr = 2\pi a \sigma^2 $
+
+Moreover, in observation, a two dimension gaussian beam function has a solid angle of 
+
+$ \displaystyle \Omega_{Beam} = \frac{\pi}{4ln2} FWHM^2 $
+
+
+
+* Proof of the Gaussian integral (Laplace 1778) can be found in [[http://www.umich.edu/~chem461/Gaussian%20Integrals.pdf | Gaussian Integrals]]
+
+* See useful integral equations in [[http://en.wikipedia.org/wiki/List_of_integrals_of_exponential_functions | Wiki Exp Integrals]], e.g. $ \int x e^{x/c} dx = c^2 (x/c-1) e^{x/c} $, and $ \int x e^{x^2/(2c^2)} dx = c^2 e^{x^2/(2c^2)} $. 

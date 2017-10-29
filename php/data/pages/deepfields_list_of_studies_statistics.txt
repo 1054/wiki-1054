@@ -1,0 +1,76 @@
+  * [[http://fr.arxiv.org/pdf/1409.5796v2|Bethermin et al. 2015 A&A (2014 arxiv)]]
+    * COSMOS 
+    * using Le Floc'h 2009 COSMOS MIPS 24um Catalog
+    * using Ilbert 2013 COSMOS opt catalog (select sources with Mstar > 3e10)
+    * Dividing MS and SB by SSFR (SSFR_crit = 10 * SSFR_MS)
+    * Stacking MS and SB in PACS, SPIRE, LABOCA and AzTEC images
+    * Deriving MS and SB stacked mean SED(z,Mstar), LIR(z,Mstar), SSFR(z,Mstar), <U>(z,Mstar), Mdust(z,Mstar), Mmol(z,Mstar), fmol(z,Mstar)
+
+
+  * [[http://fr.arxiv.org/pdf/1310.0474v1|Lee et al. 2014 ApJ (2013 arxiv)]]
+    * COSMOS
+    * using Le Floc'h 2009 COSMOS MIPS 24um catalog (f24>0.08 NObj>39000)
+    * using Schinnerer 2010 VLA 20cm catalog (1sigma=0.012mJy NObj=2865)
+    * using Magnelli 2013 PACS catalog (PEP)
+    * Combining MIPS 24um catalog and VLA 20cm catalog (24+radio prior catalog)
+    * Measuring SPIRE photometry using XID with all sources in their 24+radio prior catalog
+    * Deriving SPIRE 250um S/N>5 detections (1sigma=2.2mJy NObj=8308)
+    * Deriving SPIRE 350um S/N>5 detections (1sigma=2.9mJy NObj=3186)
+    * Deriving SPIRE 500um S/N>5 detections (1sigma=3.2mJy NObj=955)
+    * Deriving S/N>5 detections in at least two Herschel bands (NObj=4218 0.02<z<3.5)
+
+
+  * [[http://fr.arxiv.org/pdf/1501.01080v1|Lee et al. 2015 ApJ (2015 arxiv)]]
+    * COSMOS
+    * Stacking 
+
+
+  * [[http://fr.arxiv.org/pdf/1409.5433v3|Schreiber et al. 2015 A&A (2014 arxiv)]]
+    * GOODS-N, GOODS-S, COSMOS, UDS
+    * using GOODS-N Pannella 2014 Ks catalog (obj:[12317] sel:[Ks<24.5] area:[168\,arcmin^2])
+    * using GOODS-S Guo 2013 H-band catalog (CANDELS) (obj:[18364] sel:[H<26] area:[184\,arcmin^2])
+    * using COSMOS Le Floc'h 2009 MIPS 24um catalog (obj:[37544] sel:[unknown] area:[unknown])
+    * using COSMOS Ilbert 2013 Ks catalog (UltraVISTA) (obj:[unknown] sel:[Ks<23.4] area:[1.6\,degree^2])
+    * using COSMOS Muzzin 2013 Ks catalog (UltraVISTA) (obj:[168509] sel:[Ks<23.4] area:[1.6\,degree^2])
+    * using COSMOS Nayyeri ??? Opt??? catalog (CANDELS) (obj:[24396] sel:[H<26] area:[208\,arcmin^2])
+    * using UDS Galametz 2013 H-band catalog (CANDELS) (obj:[21552] sel:[H<26] area:[202\,arcmin^2])
+    * measuring PACS, SPIRE in GOODS-N (MIPS 24um S/N>3?, NObj=2681) (any PACS SPIRE S/N>3.5, NObj=1039)
+    * measuring PACS, SPIRE in GOODS-S (MIPS 24um S/N>3?, NObj=1875) (any PACS SPIRE S/N>3.5, NObj=1058)
+    * measuring PACS in COSMOS (MIPS 24um S/N>3?, NObj=37544) (any PACS S/N>3.5, NObj=9387)
+    * stacking PACS, SPIRE
+
+
+  * [[http://fr.arxiv.org/pdf/1302.5209v2| Gruppioni et al. 2013 MNRAS (2013 arxiv)]]
+    * GOODS-N, GOODS-S, ECDFS, COSMOS
+    * using blind catalogues: 
+      * GOODSS PACS 70um 3σ NObj=373;
+      * GOODSS PACS 100um 3σ NObj=717;
+      * GOODSS PACS 160um 3σ NObj=867;
+      * GOODSN PACS 100um 3σ NObj=291;
+      * GOODSN PACS 160um 3σ NObj=316;
+      * ECDFS PACS 100um 3σ NObj=813;
+      * ECDFS PACS 160um 3σ NObj=688;
+      * COSMOS PACS 100um 3σ NObj=5355;
+      * COSMOS PACS 160um 3σ NObj=5105;
+    * Referring to Berta et al. 2010, 2011 for detailed description of catalogues and number counts
+    * Deriving IR LF
+
+
+  * [[http://fr.arxiv.org/pdf/1303.4436|Magnelli et al. 2013 A&A (2013 arxiv)]]
+    * GOODS-N
+    * using GOODS-N Dickinson IRAC 3.6um catalog
+    * using GOODS-N Magnelli 2011 MIPS 24um catalog (f24 > 3-sigma ~ 0.020mJy, nobj = ???)
+
+
+
+  * [[http://fr.arxiv.org/pdf/1101.2467|Magnelli et al. 2011 A&A (2011 arxiv)]]
+    * GOODS-N, GOODS-S
+    * using GOODS-N Dickinson IRAC 3.6um catalog
+    * using GOODS-S Dickinson IRAC 3.6um catalog
+    * measuring MIPS 24um photometry
+
+
+
+
+
+

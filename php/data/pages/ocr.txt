@@ -1,0 +1,13 @@
+==== OCR ====
+
+first convert pdf to an image
+
+    convert -density 500 xxx.pdf[5] xxx.png    # this will convert page 6 of the xxx.pdf to an image
+
+then use YAGF + 
+
+    YAGF -> open image -> 
+
+
+
+
