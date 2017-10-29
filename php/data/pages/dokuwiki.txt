@@ -1,4 +1,0 @@
-[[https://www.dokuwiki.org/ | Dokuwiki]] is a light wiki system without SQL. 
-
-How to use it to write pages? <fc #000080> Dokuwiki Cheat Sheet </fc> might be helpful:
-[[https://wiki.lnt.ei.tum.de/lib/exe/fetch.php?media=dokuwiki_cheatsheet.pdf | dokuwiki_cheatsheet.pdf]]

@@ -1,4 +1,0 @@
-===== Regression with Two Independent Variables =====
-To solve $f0 = a1*f1 + a2*f2$, please refer to http://luna.cas.usf.edu/~mbrannic/files/regression/Reg2IV.html
-
-

@@ -1,9 +1,0 @@
-$ 1 W m^{-2} = 10^7 erg\ s^{-1} \times 4 \pi (\frac{D}{m})^2 = 10^7 erg\ s^{-1} \times 4 \pi (\frac{D}{Mpc} \times 3.085677 \times 10^{22})^2 $
-
-$ \frac{L}{[erg\ s^{-1}]} = \frac{F}{[erg\ s^{-1} m^{-2}]} \cdot 4 \pi \frac{D^2}{[m^2]} $
-
-$ \frac{L}{[erg\ s^{-1}]} = 10^7 \times \cdot \frac{F}{[W m^{-2}]} \cdot 4 \pi \cdot (3.085677 \times 10^{22})^2 \cdot \frac{D^2}{[Mpc^2]} $
-
-$ \frac{L}{[erg\ s^{-1}]} = 9.5214025 \times 10^{51} \cdot \frac{F}{[W m^{-2}]} \cdot \frac{D^2}{[Mpc^2]} $
-
-$ \frac{L}{[L_{solar}]} = 3.0997273 \times 10^{19} \cdot \frac{F}{[W m^{-2}]} \cdot \frac{D^2}{[Mpc^2]} $

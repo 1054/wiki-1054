@@ -1,6 +1,0 @@
-<html>
-<iframe src="https://docs.google.com/file/d/0B7tSmO76DZaEcDNKMEVFaElFdEk/preview" width="640" height="385"></iframe>
-</html>
-
-
-<colorbox>&class=iframe&link=http://www.jacklmoore.com/colorbox&name=ColorBox&</colorbox>

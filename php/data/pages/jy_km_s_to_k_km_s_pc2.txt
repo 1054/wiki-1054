@@ -1,9 +1,0 @@
-$ \frac{L'_{mol}}{[K \ km \ s^{-1} pc^2]} = 3.25 \times 10^7 \ (\frac{D_L}{[Mpc]})^2 \ (\frac{\nu_{obs}}{[GHz]})^{-2} \ (\frac{S_{mol} \Delta v}{[Jy \ km/s]}) \ (1+z)^{-3} $
-
-see Solomon & Vanden Bout 2005 ARA&A eq (3). 
-
-or 
-
-$ \frac{L'_{mol}}{[K \ km \ s^{-1} pc^2]} = 3.25 \times 10^7 \ (\frac{D_L}{[Mpc]})^2 \ (\frac{\nu_{rest}}{[GHz]})^{-2} \ (\frac{S_{mol} \Delta v}{[Jy \ km/s]}) \ (1+z)^{-1} $
-
-
