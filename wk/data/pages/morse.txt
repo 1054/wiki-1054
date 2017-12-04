@@ -1,0 +1,10 @@
+Please recall your SMS message ring:
+    ∙∙∙––∙∙∙
+
+Please recall the SOS:
+    ∙∙∙–––∙∙∙
+
+More notes:
+    ( ∙ Dit U+2219 BULLET OPERATOR)
+    ( – Dah U+2219 BULLET OPERATOR)
+    ( len(–) = 3 len(∙) )

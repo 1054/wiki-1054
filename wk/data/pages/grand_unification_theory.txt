@@ -1,0 +1,31 @@
+===== Grand Unification Theory (GUT) =====
+
+===== Particles & Statistics =====
+
+$\displaystyle N_j^{Bose-Einstein} = \frac{g_j}{e^{-(\alpha+\beta{E_j})}-1}$, e.g. for photons and Planck black body radiation
+
+$\displaystyle N_j^{Fermi-Dirac} = \frac{g_j}{e^{-(\alpha+\beta{E_j})}+1}$, e.g. for white dwarf electron ocean
+
+$\displaystyle N_j^{Maxwell-Boltzmann} = \frac{g_j}{e^{-(\alpha+\beta{E_j})}+1} \approx \frac{g_j}{e^{(\alpha+\beta{E_j})}} = \frac{g_j}{e^{(-\mu+E_j)/kT}}$, where $\displaystyle \frac{1}{e^x\pm1} \approx e^{-x} = \frac{1}{e^x}$ (Wien approximation for $x>>1$)
+
+$\displaystyle N_j^{Planck} = \frac{g_j}{e^{-(\alpha+\beta{E_j})}-1} = \frac{(2h\nu^3/c^2)}{e^{h\nu/kT}-1}$, the black body radiation
+
+$\displaystyle N_j^{Rayleigh-Jeans} = \frac{g_j}{e^{-(\alpha+\beta{E_j})}-1} \approx \frac{g_j}{(\alpha+\beta{E_j})} = \frac{(2h\nu^3/c^2)}{(h\nu/kT)} = 2\nu^2/c^2 \cdot kT$, where $\displaystyle e^x-1 \approx x$ (Rayleigh-Jeans approximation for $x<<1$)
+
+===== Energy & Conservation =====
+
+$\displaystyle \mathcal{L}(q_1,q_2..q_n,\dot{q_1},\dot{q_1}..\dot{q_n},t) = T - V $, the Lagrangian variable equals the sum of Kinetics and minus Potential energy
+
+$\displaystyle \frac{d}{dt}(\frac{\partial\mathcal{L}}{\partial\dot{q_i}}) = \frac{\partial\mathcal{L}}{\partial{q_i}}$, the Newton II law
+
+$\displaystyle \frac{d\mathcal{L}}{d{t}} = \frac{\partial\mathcal{L}}{\partial{t}} + \Sigma\frac{\partial\mathcal{L}}{\partial{q_i}}\dot{q_i} + \Sigma\frac{\partial\mathcal{L}}{\partial{\dot{q_i}}}\ddot{q_i}$
+
+E.g. in Cartesian coordinates, $\displaystyle \mathcal{L} = \frac{1}{2} m (x^2+y^2+z^2) - V(x,y,z)$
+
+E.g. in spherical coordinates, $\displaystyle \mathcal{L} = \frac{1}{2}m(\dot(r)^2+r^2\dot{\theta}^2+r^2\sin^2\theta\;\dot{\phi}^2) - V(r)$
+
+E.g. Newtonian gravity, $\displaystyle \mathcal{L} = \frac{1}{8\pi{G}}(\nabla\Phi)^2 - \rho\Phi$, then from $\displaystyle \frac{d\mathcal{L}}{d{t}} = 0$ we get $\frac{1}{4\pi{G}}(\nabla\nabla\Phi) = \rho$
+
+E.g. Einstein gravity, $\displaystyle \mathcal{L_{GR}} = \mathcal{L_{EH}} + \mathcal{L_{matter}} = \frac{c^4}{16\pi{G}}(\mathcal{R}-2\Lambda) + \mathcal{L_{matter}} = \frac{c^4}{8\pi{G}}\frac{\mathcal{R}_{\mu\nu}}{g_{\mu\nu}} + 2\frac{\partial\mathcal{L_{matter}}}{\partial{g^{\mu\nu}}} = \frac{\mathcal{T}_{\mu\nu}}{g_{\mu\nu}} + \mathcal{L_{EH}} + 2\frac{\partial\mathcal{L_{matter}}}{\partial{g^{\mu\nu}}}$
+
+

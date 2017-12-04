@@ -1,0 +1,6 @@
+==== mac usages ====
+[[mac make disk image]]
+
+
+==== mac softwares ====
+[[LightPaper]] -- a good to use markdown writer

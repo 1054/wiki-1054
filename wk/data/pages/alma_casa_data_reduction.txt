@@ -1,0 +1,107 @@
+===== ALMA Archive =====
+
+=== Calibrator Catalog ===
+  * [[https://almascience.eso.org/alma-data/calibrator-catalogue]]
+  * [[https://science.nrao.edu/facilities/alma/aboutALMA/Technology/ALMA_Memo_Series/alma594/memo594.pdf | solar system calibrator flux densities]]
+  * [[https://www.wolframalpha.com/input/?i=Mars+angular+diameter | Mars]] [[https://www.wolframalpha.com/input/?i=Ganymede+angular+diameter | Ganymede (Jupiter Moon III)]] [[https://www.wolframalpha.com/input/?i=Ganymede+angular+diameter+at+2014-01-14+09%3A00%3A00+UTC | Ganymede (Jupiter Moon III) (at 2014-01-14 UTC)]]
+
+
+=== ALMA Data Archive ===
+  * [[https://almascience.eso.org/alma-data/archive]]
+
+
+
+
+
+
+===== CASA Quick Start =====
+=== let's try split, image, clean and exportfits ===
+<html><font size="-1"></html>
+  # 
+  # --- listobs (check the Fields in casa Log Messages) --- #
+  # 
+  vis = 'calibrated.ms'; inp(listobs); listobs()
+  # 
+  # --- split --- #
+  # 
+  vis = 'calibrated.ms'; outputvis = 'try_split_object_name.ms'; field = 11; width = 3840; keepflags = F; 
+  inp(split); split()
+  # 
+  # --- image (first take advice) --- #
+  # 
+  im.open(outputvis); im.advise(takeadvice=F); im.close()
+  # 
+  # --- image (image with niter=0, clean with niter>0) --- #
+  # 
+  vis = outputvis; imagename = 'try_image_object_name'; field = ''; imsize = 1024; cell = '0.1arcsec'; niter = 0; 
+  inp(clean); clean()
+  # 
+  # --- exportfits (export dirty image) --- #
+  # 
+  imagename += '.image'; fitsimage = imagename+'.fits'; overwrite = T; 
+  inp(exportfits); exportfits
+  # 
+  # --- exportfits (export beam) --- #
+  # 
+  imagename = imagename.replace('.image','.beam'); fitsimage = imagename+'.fits'; overwrite = T; 
+  inp(exportfits); exportfits
+  # 
+  # --- cleaning (image with niter=0, clean with niter>0) --- #
+  # 
+  imagename = 'try_clean_object_name'; niter = 15; interactive = T; 
+  inp(clean); clean()
+<html></font></html>
+
+=== let's try uvmodelfit ===
+<html><font size="-1"></html>
+  # 
+  # --- uvmodelfit --- #
+  # 
+  vis = 'calibrated.ms'
+  field = ''
+  spw = ''
+  niter = 25
+  comptype = 'G' # Gaussian or Point
+  sourcepar = [1.0, 0.0, 0.0, 0.5, 1.0, 0.0] # flux, ra-off, dec-off, major, ab-ratio, pos-angle
+  varypar = [T, T, T, T, F, F] # set the last two False will fit circular Gaussian
+  inp(uvmodelfit)
+  uvmodelfit()
+<html></font></html>
+
+
+
+
+
+
+===== CASA Manual =====
+
+
+=== CASA missing information on leap seconds ===
+  * [[http://casaguides.nrao.edu/index.php?title=Fixing_out_of_date_TAI_UTC_tables_(missing_information_on_leap_seconds)]]
+
+
+=== CASA spectral window (spw) ===
+  * [[http://casaguides.nrao.edu/index.php?title=Selecting_Spectral_Windows_and_Channels]]
+
+
+=== CASA measurement set structure (ms) ===
+  * [[http://casaguides.nrao.edu/index.php?title=Measurement_Set_Contents]]
+
+
+=== CASA split ===
+  * [[http://casaguides.nrao.edu/index.php?title=Split]]
+  * [[http://casa.nrao.edu/docs/TaskRef/split-task.html]]
+  * [[http://casa.nrao.edu/docs/CasaRef/ms.split.html]]
+
+
+=== CASA uvmodelfit ===
+  * [[http://casa.nrao.edu/Release3.3.0/docs/UserMan/UserMansu226.html]]
+
+
+
+
+
+
+===== Misc =====
+  * [[https://science.nrao.edu/facilities/alma/didyouknow-notes | some interesting notes]]
+

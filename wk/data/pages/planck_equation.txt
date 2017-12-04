@@ -1,0 +1,13 @@
+===== Integral of Planck Function =====
+
+$ \displaystyle L = \int_{0}^{\infty} \frac{2h\nu^3}{c^2} \frac{1}{e^{h\nu/kT}-1} d\nu $
+
+$ \displaystyle \phantom{L} = 2 \frac{k^3T^3}{h^2c^2} \int_{0}^{\infty} \big( \frac{h\nu}{kT} \big)^3 \frac{1}{e^{h\nu/kT}-1} d\nu \;\;\;\;\;\; let \; x=\frac{h\nu}{kT},\; dx=\frac{hd\nu}{kT} $
+
+$ \displaystyle \phantom{L} = 2 \frac{k^4T^4}{h^3c^2} \int_{0}^{\infty} \frac{x^3}{e^x-1} dx = 2 \frac{k^4T^4}{h^3c^2} \int_{0}^{\infty} \frac{x^3 e^{-x}}{1-e^{-x}} = 2 \frac{k^4T^4}{h^3c^2} \sum_{n=1}^{\infty} \int_{0}^{\infty} x^3 e_{-nx} dx \;\;\;\;\;\; used \; \frac{e^{-x}}{1-e^{-x}}=\sum_{n=1}^{\infty} e^{-nx} $
+
+$ \displaystyle \phantom{L} = 2 \frac{k^4T^4}{h^3c^2} \sum_{n=1}^{\infty} \frac{6}{n^4} = 12 \frac{k^4T^4}{h^3c^2} \eta(4) = 2 \frac{k^4T^4}{h^3c^2} \frac{\pi^4}{15} = \frac{2\pi^4k^4}{15h^3c^2} T^4 \;\;\; [W m^{-2} sr^{-1}] $
+
+
+Reference:
+http://www.spectralcalc.com/blackbody/integrate_planck.html

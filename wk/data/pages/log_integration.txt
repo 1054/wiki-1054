@@ -1,0 +1,25 @@
+==== logarithm discrete integration ====
+
+    x = 8,1000,1.0
+    f = f(x)
+    integration(f over x) = sum(f)*1.0
+    
+    x = 8,1000,0.25
+    f = f(x)
+    integration(f over x) = sum(f)*0.25
+    
+    lg_x = lg(8),lg(1000),0.02
+    f = f(x)
+    integration(f over x) = sum(f)*(10**lg_x)*(10**0.02-(1.0/10**0.02))/2.0
+    
+    lg_x = lg(8),lg(1000),0.02
+    f = f(x)
+    integration(f over x) = sum(f)*(10**lg_x)*0.02/lg(exp(1))
+    
+    e.g. f is flux intensity per wavelength and x is wavelength, then integration (f over x) equals $\lambda f_{\lambda}$. 
+    e.g. f is flux intensity per frequency and x is frequency, then integration (f over x) equals $\nu f_{\nu}$. 
+    
+    
+
+
+

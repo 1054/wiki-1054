@@ -1,0 +1,19 @@
+===== Dust Element Abundance at Solar Level =====
+<html> <font size="-1"> </html>
+^    X    ^  NX/NH (gas+solid)  ^  NX/NH (gas/total)  ^    MX/MH   ^
+|         |        (ppm)        |                     |            |
+|    C    |         247         |         0.57        |   0.0013   |
+|    N    |         85          |         0.72        |   0.0003   |
+|    O    |         490         |         0.73        |   0.0021   |
+|   Mg    |         38          |         0.08        |   0.0008   |
+|   Al    |         3           |         <0.1        |   0.0001   |
+|   Si    |         32          |         0.05        |   0.0009   |
+|   Ca    |         2           |         0.0002      |   0.0001   |
+|   Fe    |         29          |         0.007       |   0.0016   |
+|   Ni    |         2           |         0.004       |   0.0001   |
+|  Total  |                     |                     |   0.0073   |
+
+References:
+* Draine, Dale, Bendo, et al. (2007)
+
+<html> <font size="+1"> </html>

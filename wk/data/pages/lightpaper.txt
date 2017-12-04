@@ -1,0 +1,14 @@
+Quote: "LightPaper for Mac is a simple, beautiful, powerful yet free Text Editor for passionate writers." -- http://clockworkengine.com/
+
+LightPaper for Mac -- http://clockworkengine.com/lightpaper-mac/
+
+LightPaper for Windows? -- N/A
+
+==== My LightPaper Themes ====
+<code bash>
+cd ~/.lightpaper/Themes # (if not exist then create it)
+ls
+# dashing.txt dashing.css background.png
+</code>
+
+

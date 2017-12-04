@@ -1,0 +1,40 @@
+===== GILDAS =====
+
+[[http://www.iram.fr/~gildas/dist/daily/]]
+
+
+===== gildas/sic Help Document =====
+* http://cdsweb.u-strasbg.fr/vizier/doc/man/gildas/hlp/sic-help-sic.hlp
+
+
+===== gildas/mapping Usage =====
+
+==== gildas/mapping uvtable go view ====
+<html><font size=1></html>
+    # [bash] 
+    mapping
+    # [mapping]
+    let name somename
+    let size 30
+    let map_size 512
+    go uvmap
+    go view
+<html></font></html>
+
+==== gildas/mapping uvtable go splitpolar ====
+<html><font size=1></html>
+    let name somename
+    run uv_splitpolar
+    --> Input multi-polarization UV Table: somename.uvt
+    --> Output single polarization UV Table: somename_SP.uvt
+    --> Stokes parameter: NONE
+    --> Click OK!
+<html></font></html>
+
+==== gildas/mapping uvtable import casa uvfits ====
+<html><font size=1></html>
+    FITS name.uvfits TO name.uvt /STYLE CASA
+<html></font></html>
+
+
+

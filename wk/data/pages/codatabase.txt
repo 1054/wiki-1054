@@ -1,0 +1,7 @@
+Thank you for your interest in this project CO-Database. This research aims to fully collect CO observations of galaxies done by all researchers. 
+
+Here we prepare the list of observations that we are collecting. It's still updating. 
+
+[[codatabase_list_of_observations|List of Observations]]
+
+[[codatabase_list_of_galaxies|List of Galaxies]]

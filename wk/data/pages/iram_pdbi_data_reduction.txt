@@ -1,0 +1,57 @@
+====== Level 0 Raw Data ======
+
+==== run the pipeline ====
+<html><font size=1></html>
+<code bash>
+# bash (ssh -X ACCOUNT@IRAM.FR)
+gagiram # check the GILDAS version
+getproj # get the project data ready (now stored under ~/tmp/DATA/)
+mkdir ~/try_some_date
+cd    ~/try_some_date
+clic # start GILDAS/clic
+</code>
+<html></font></html>
+
+<html><font size=1></html>
+<code bash>
+! GILDAS/clic
+! run @pipeline
+! this will automatically calibrate the data
+! we need to run pipeline for each OBS-DATE
+! but note that some OBS-DATE are calibrated together
+! so run pipeline for each of them produce same result
+@pipeline ACCOUNT OBS-DATE
+</code>
+<html></font></html>
+
+==== from hpb to uvt ====
+
+<html><font size=1></html>
+<code bash>
+! GILDAS/CLIC
+! GILDAS/CLIC -- "Open raw data file" -- click
+!             -- "RAW DATA DIRECTORIES" -- click
+!             -- "ipb_data:?" -- fill in the data directory e.g. "." -- click Go
+!             -- "Project_Date?" -- select OBS-DATE -- 
+!             -- "OPEN and FIND" -- click
+!             -- "Mode?" -- select "OLD" -- click Go
+!             -- click Close
+! 
+find
+list /source
+! 
+! GILDAS/CLIC -- "Write a UV Table" -- click
+!             -- "Input Data File Name" -- click "File" and select your hpb file
+!             -- "Output UV Table Name" -- fill in your new UV table name e.g. Source1
+!             -- "New Table" -- select "Yes"
+!             -- "Source Name" -- fill in one source name e.g. Source1
+!             -- "Receiver number" -- fill in the correct receiver number
+!             -- "Line or Continuum" -- select LINE or CONT
+!             -- click Go
+!             -- click Close
+! 
+$ls *.uvt
+</code>
+<html></font></html>
+
+

@@ -1,0 +1,54 @@
+mean
+  * $ mean(X) = \mathbb{E}(X) $
+
+
+mode
+
+
+median
+
+
+mean square error about constant a (or the second moment about a) 均方误差
+  * $ mse_a(X) = \mathbb{E} \Big( \big( X-a \big) ^2 \Big) = \mathbb{E} \big( X^2-2aX+a^2 \big) = \mathbb{E}(X^2) - 2 a \mathbb{E}(X) + a^2 $
+  * when $a=\mathbb{E}(X)$, it is the second central moment. 
+
+
+variance (or the second moment) 方差
+  * $ var(X) = \mathbb{E} \Big( \big( X-\mathbb{E}(X) \big) ^2 \Big) = \mathbb{E}(X^2) - \mathbb{E}^2(X) $
+  * $ var(X) = \displaystyle \frac{1}{N} \sum_{i=1}^{N} \big( x_i - mean(X) \big) $
+
+
+skewness (or the third moment) 偏度系数
+  * $ skew(X) = \displaystyle \mathbb{E} \Big( \big( \frac{X-\mathbb{E}(X)}{std(X)} \big) ^3 \Big) $
+
+
+kurtosis 峰度系数 (or the fourth moment)
+  * $ kurt(X) = \displaystyle \mathbb{E} \Big( \big( \frac{X-\mathbb{E}(X)}{std(X)} \big) ^4 \Big) $
+  * Kurtosis comes from the Greek word for bulging.
+
+
+root mean square error about constant a 均方根误差
+  * $ rmse_a(X) = \displaystyle \sqrt{ mse_a(X) } $
+  * when the constant a = 0, it is the root mean square (RMS) 均方根值
+
+
+standard deviation 标准差
+  * $ std(X) = \displaystyle \sqrt{ var(X) } $
+
+
+coefficient of variation
+  * $ cv(X) = \displaystyle \frac{std(X)}{\mathbb{E}(X)} $
+
+
+covariance 协方差
+  * $ cov(X,Y) = \mathbb{E} \Big( \big( X-\mathbb{E}(X) \big) \big( Y-\mathbb{E}(Y) \big) \Big) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y) $
+  * $ cov(X,Y) = \displaystyle \frac{1}{NM} \sum_{i=1,j=1}^{N,M} \Big( \big( x_i - mean(X) \big) \big( y_i - mean(Y) \big) \Big) $
+  * $ var(X+Y) = var(X) + var(Y) + 2 cov(X,Y) $
+
+correlation 相关
+  * $ cor(X,Y) = \displaystyle \frac{cov(X,Y)}{std(X) std(Y)} $
+
+references
+  * http://www.math.uah.edu/stat/expect/Covariance.html
+
+

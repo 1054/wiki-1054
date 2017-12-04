@@ -1,0 +1,27 @@
+===== Goto Position =====
+goto line 4000
+<code bash>
+:4000
+</code>
+
+goto text "hello"
+<code bash>
+:/hello
+</code>
+
+
+===== Delete Lines =====
+delete current line
+<code bash>
+dd
+</code>
+
+delete from line 2 to line 6999
+<code bash>
+:2,6999d
+</code>
+
+delete 30000 lines since current line
+<code bash>
+:d30000
+</code>
